@@ -14,7 +14,6 @@ ActiveRecord::Schema.define(:version => 20090715173427) do
   create_table "cartoni", :force => true do |t|
     t.string   "nome_it"
     t.string   "nome_ori"
-    t.string   "produzione"
     t.string   "distribuito_in"
     t.string   "tipo"
     t.string   "formato"
