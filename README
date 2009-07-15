@@ -2,8 +2,9 @@ Gestione liste di canzoni dei cartoni animati
 
 TODO
 
- * Cartone:
-  - editare cartone.rb
- * creare scaffold Canzone
- * creare modello Autore
-
+  * Cartone:
+    - editare cartone.rb
+  * creare scaffold Canzone
+  * creare modello Autore
+  * creare modello Interprete
+  * creare modello Produzione

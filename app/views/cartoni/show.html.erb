@@ -1,11 +1,11 @@
 <% title "Cartone" %>
 
 <p>
-  <strong>Nome It:</strong>
+  <strong>Nome:</strong>
   <%=h @cartone.nome_it %>
 </p>
 <p>
-  <strong>Nome Ori:</strong>
+  <strong>Nome Originale:</strong>
   <%=h @cartone.nome_ori %>
 </p>
 <p>
@@ -34,7 +34,7 @@
 </p>
 
 <p>
-  <%= link_to "Edit", edit_cartone_path(@cartone) %> |
-  <%= link_to "Destroy", @cartone, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", cartoni_path %>
+  <%= link_to "Modifica", edit_cartone_path(@cartone) %> |
+  <%= link_to "Cancella", @cartone, :confirm => 'Sei sicuro?', :method => :delete %> |
+  <%= link_to "Mostra Tutti", cartoni_path %>
 </p>
