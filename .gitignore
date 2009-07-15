@@ -2,6 +2,7 @@
 .*.swp
 log/*.log
 tmp/**/*
+private/**/*
 private/*.ods
 private/*.csv
   config/database.yml
