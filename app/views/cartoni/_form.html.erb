@@ -1,0 +1,36 @@
+<% form_for @cartone do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :nome_it %><br />
+    <%= f.text_field :nome_it %>
+  </p>
+  <p>
+    <%= f.label :nome_ori %><br />
+    <%= f.text_field :nome_ori %>
+  </p>
+  <p>
+    <%= f.label :produzione %><br />
+    <%= f.text_field :produzione %>
+  </p>
+  <p>
+    <%= f.label :distribuito_in %><br />
+    <%= f.text_field :distribuito_in %>
+  </p>
+  <p>
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </p>
+  <p>
+    <%= f.label :formato %><br />
+    <%= f.text_field :formato %>
+  </p>
+  <p>
+    <%= f.label :anno %><br />
+    <%= f.date_select :anno %>
+  </p>
+  <p>
+    <%= f.label :episodi %><br />
+    <%= f.text_field :episodi %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

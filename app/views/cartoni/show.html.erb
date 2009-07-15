@@ -1,0 +1,40 @@
+<% title "Cartone" %>
+
+<p>
+  <strong>Nome It:</strong>
+  <%=h @cartone.nome_it %>
+</p>
+<p>
+  <strong>Nome Ori:</strong>
+  <%=h @cartone.nome_ori %>
+</p>
+<p>
+  <strong>Produzione:</strong>
+  <%=h @cartone.produzione %>
+</p>
+<p>
+  <strong>Distribuito In:</strong>
+  <%=h @cartone.distribuito_in %>
+</p>
+<p>
+  <strong>Tipo:</strong>
+  <%=h @cartone.tipo %>
+</p>
+<p>
+  <strong>Formato:</strong>
+  <%=h @cartone.formato %>
+</p>
+<p>
+  <strong>Anno:</strong>
+  <%=h @cartone.anno %>
+</p>
+<p>
+  <strong>Episodi:</strong>
+  <%=h @cartone.episodi %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_cartone_path(@cartone) %> |
+  <%= link_to "Destroy", @cartone, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", cartoni_path %>
+</p>

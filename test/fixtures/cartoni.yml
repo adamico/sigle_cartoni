@@ -1,0 +1,19 @@
+one:
+  nome_it: MyString
+  nome_ori: MyString
+  produzione: MyString
+  distribuito_in: MyString
+  tipo: MyString
+  formato: MyString
+  anno: 2009-07-15
+  episodi: 1
+
+two:
+  nome_it: MyString
+  nome_ori: MyString
+  produzione: MyString
+  distribuito_in: MyString
+  tipo: MyString
+  formato: MyString
+  anno: 2009-07-15
+  episodi: 1

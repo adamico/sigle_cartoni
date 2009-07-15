@@ -1,0 +1,31 @@
+<% title "Cartoni" %>
+
+<table>
+  <tr>
+    <th>Nome It</th>
+    <th>Nome Ori</th>
+    <th>Produzione</th>
+    <th>Distribuito In</th>
+    <th>Tipo</th>
+    <th>Formato</th>
+    <th>Anno</th>
+    <th>Episodi</th>
+  </tr>
+  <% for cartone in @cartoni %>
+    <tr>
+      <td><%=h cartone.nome_it %></td>
+      <td><%=h cartone.nome_ori %></td>
+      <td><%=h cartone.produzione %></td>
+      <td><%=h cartone.distribuito_in %></td>
+      <td><%=h cartone.tipo %></td>
+      <td><%=h cartone.formato %></td>
+      <td><%=h cartone.anno %></td>
+      <td><%=h cartone.episodi %></td>
+      <td><%= link_to "Show", cartone %></td>
+      <td><%= link_to "Edit", edit_cartone_path(cartone) %></td>
+      <td><%= link_to "Destroy", cartone, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Cartone", new_cartone_path %></p>
