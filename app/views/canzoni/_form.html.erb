@@ -1,0 +1,16 @@
+<% form_for @canzone do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :titolo %><br />
+    <%= f.text_field :titolo %>
+  </p>
+  <p>
+    <%= f.label :durata %><br />
+    <%= f.text_field :durata %>
+  </p>
+  <p>
+    <%= f.label :anno %><br />
+    <%= f.date_select :anno %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

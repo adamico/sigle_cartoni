@@ -1,0 +1,20 @@
+<% title "Canzone" %>
+
+<p>
+  <strong>Titolo:</strong>
+  <%=h @canzone.titolo %>
+</p>
+<p>
+  <strong>Durata:</strong>
+  <%=h @canzone.durata %>
+</p>
+<p>
+  <strong>Anno:</strong>
+  <%=h @canzone.anno %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_canzone_path(@canzone) %> |
+  <%= link_to "Destroy", @canzone, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", canzoni_path %>
+</p>

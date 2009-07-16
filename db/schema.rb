@@ -9,7 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090715173427) do
+ActiveRecord::Schema.define(:version => 20090716101908) do
+
+  create_table "canzoni", :force => true do |t|
+    t.string   "titolo"
+    t.integer  "durata"
+    t.date     "anno"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "cartoni", :force => true do |t|
     t.string   "nome_it"

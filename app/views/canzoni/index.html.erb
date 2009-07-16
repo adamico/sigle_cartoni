@@ -1,0 +1,21 @@
+<% title "Canzoni" %>
+
+<table>
+  <tr>
+    <th>Titolo</th>
+    <th>Durata</th>
+    <th>Anno</th>
+  </tr>
+  <% for canzone in @canzoni %>
+    <tr>
+      <td><%=h canzone.titolo %></td>
+      <td><%=h canzone.durata %></td>
+      <td><%=h canzone.anno %></td>
+      <td><%= link_to "Show", canzone %></td>
+      <td><%= link_to "Edit", edit_canzone_path(canzone) %></td>
+      <td><%= link_to "Destroy", canzone, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Canzone", new_canzone_path %></p>
