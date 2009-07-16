@@ -9,7 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090716101908) do
+ActiveRecord::Schema.define(:version => 20090716102921) do
+
+  create_table "autori", :force => true do |t|
+    t.string   "nome"
+    t.string   "cognome"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "canzoni", :force => true do |t|
     t.string   "titolo"
@@ -27,6 +34,13 @@ ActiveRecord::Schema.define(:version => 20090716101908) do
     t.string   "formato"
     t.date     "anno"
     t.integer  "episodi"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "produzioni", :force => true do |t|
+    t.string   "nome"
+    t.string   "paese"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

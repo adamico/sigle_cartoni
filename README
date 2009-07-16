@@ -4,7 +4,14 @@ TODO
 
   * Cartone:
     - editare cartone.rb
-  * creare scaffold Canzone
+  * Canzone:
+    - editare canzone.rb
+    - popolare database
   * creare modello Autore
-  * creare modello Interprete
+    - estrarre dal file csv canzoni
+    - editare autore.rb 
+    - aggiungere colonna per definire il ruolo (compositore,interprete)
+    - polymorphic association in canzone
   * creare modello Produzione
+    - estrarre dal file csv cartoni
+    - popolare database
