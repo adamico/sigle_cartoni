@@ -1,16 +1,23 @@
 <% title "Canzoni" %>
 
+<p>
+  Celo: <%= @canzoni.count - @mancanti.count %>
+</p>
+<p>
+  Mi manca : <%= @mancanti.count %>
+</p>
+
 <table>
   <tr>
     <th>Titolo</th>
     <th>Durata</th>
-    <th>Anno</th>
+    <th>Ce l'ho?</th>
   </tr>
   <% for canzone in @canzoni %>
     <tr>
       <td><%=h canzone.titolo %></td>
       <td><%=h canzone.durata %></td>
-      <td><%=h canzone.anno %></td>
+      <td><%=h canzone.celo %></td>
       <td><%= link_to "Show", canzone %></td>
       <td><%= link_to "Edit", edit_canzone_path(canzone) %></td>
       <td><%= link_to "Destroy", canzone, :confirm => 'Are you sure?', :method => :delete %></td>

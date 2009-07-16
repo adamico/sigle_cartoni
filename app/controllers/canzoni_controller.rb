@@ -1,6 +1,7 @@
 class CanzoniController < ApplicationController
   def index
-    @canzoni = Canzone.all
+    @canzoni = Canzone.all(:order => "celo ASC")
+    @mancanti ||= Canzone.manca
   end
   
   def show

@@ -11,6 +11,7 @@ TODO
     - estrarre dal file csv canzoni
     - editare autore.rb 
     - aggiungere colonna per definire il ruolo (compositore,interprete)
+    - aggiungere colonna pseudonimo
     - polymorphic association in canzone
   * creare modello Produzione
     - estrarre dal file csv cartoni

@@ -5,12 +5,12 @@
     <%= f.text_field :titolo %>
   </p>
   <p>
-    <%= f.label :durata %><br />
-    <%= f.text_field :durata %>
+    <%= f.label :durata %>
+    <%= f.text_field :durata, :size => 3 %>
   </p>
   <p>
-    <%= f.label :anno %><br />
-    <%= f.date_select :anno %>
+    <%= f.label :celo, "Ce l'ho?" %>
+    <%= f.check_box :celo %>
   </p>
   <p><%= f.submit "Submit" %></p>
 <% end %>
